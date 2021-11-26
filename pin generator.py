@@ -7,7 +7,7 @@ print(ceiling)
 with open("pin.txt","a") as file :
     file.truncate(0)
     for i in range(0,ceiling+1) : 
-        print(str(i).zfill(digits))
+        #print(str(i).zfill(digits)) debug line
         file.writelines(str(i).zfill(digits) + '\n')
         i += 1
     file.close()
